@@ -15,10 +15,15 @@ public class HerokuBootApplication {
 }
 
 @RestController
-class HelloController{
-	
+class HelloController {
+
 	@GetMapping("/")
 	String hello() {
 		return "Hello World";
+	}
+
+	@GetMapping("/test")
+	String test() {
+		return "Hello Test";
 	}
 }
